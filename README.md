@@ -64,9 +64,7 @@ Data is sourced from internal ETF datasets and consists of:
 
 ETF flow is defined as:
 
-[
-Flow_t = Shares_t - Shares_{t-1}
-]
+![image](https://github.com/user-attachments/assets/372b7ead-56f4-442c-93ac-5d130fcdc266)
 
 This serves as the core explanatory variable (X).
 
@@ -77,9 +75,8 @@ This serves as the core explanatory variable (X).
 * ETFs are grouped into ~31 industries
 * Industry returns are computed using **market-cap weighted returns**
 
-[
-R_{industry} = \sum w_i \cdot R_i
-]
+![image](https://github.com/user-attachments/assets/6c5d0e84-079e-4d4f-857e-439ecd2ea1bc)
+
 
 This serves as the dependent variable (Y).
 
