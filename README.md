@@ -139,13 +139,12 @@ Analysis is extended across:
 
 ## 📈 Strategy Insight
 
-### Key Finding
+### 🧠 Empirical Findings
 
-👉 **ETF flows contain predictive information for industry returns**
+This project identifies a systematic negative relationship between ETF fund flows and subsequent returns, primarily captured through factor Information Coefficient (IC).
 
-👉 **Institutional flows have stronger predictive power than retail flows**
-
----
+The negative IC is statistically significant in certain industries, while weaker or unstable in others
+This suggests that flow signals are heterogeneous across sectors, rather than universally predictive
 
 ### Why?
 
@@ -195,32 +194,104 @@ This framework can be extended to:
 
 ---
 
-## ⚠️ Notes
 
-* No machine learning models are used
-* Focus is on **data engineering + financial intuition**
-* Framework is modular and extendable
+
+## ⚙️ Factor Construction
+
+To investigate this relationship, we constructed:
+
+* **52 flow-based factors**
+* **52 differential factors (spread factors)**
+
+These include:
+
+* Institutional vs retail flow
+* Absolute vs relative flow
+* Flow differentials across investor types
+
+This design enables a **multi-dimensional factor framework** to capture different aspects of capital flow dynamics.
 
 ---
 
-## 📌 Future Improvements
+## 🧩 Investor Decomposition (核心亮点)
 
-* Add **factor backtesting (long-short portfolio)**
-* Introduce **machine learning models (Lasso, PCA)**
-* Improve classification of ambiguous flows
-* Incorporate **high-frequency data**
+Using **SQL-based classification and data dictionary mapping**, ETF flows are decomposed into:
+
+### Institutional Investors
+
+* Public mutual funds
+* Broker-dealers
+* Insurance companies
+* Private equity funds
+
+### Retail / Other Investors
+
+* Individual investors
+* ETF feeder funds (联接基金)
+
+👉 This allows us to isolate **“smart money” signals** from aggregate flows
 
 ---
 
-## 🧾 Summary
+## 📊 Cross-Sectional Insight
 
-This project provides a **clean and scalable framework** for:
+The negative flow-return relationship is primarily reflected in **IC values**, and exhibits:
 
-* ETF flow decomposition
-* Investor behavior analysis
-* Industry return prediction
+* Stronger signal in **large-scale ETFs**
+* Sector-dependent predictability
+* Significant variation across **investor types**
 
-It demonstrates how **data processing + financial logic** can generate **actionable quantitative signals**.
+---
+
+## 🔍 Interpretation
+
+The observed negative correlation suggests:
+
+* ETF inflows may reflect **lagged or reactive behavior (trend chasing)**
+* Outflows may coincide with **price corrections or rebalancing**
+* Institutional and retail investors contribute differently to price dynamics
+
+---
+
+## 🧪 Behavioral Heterogeneity
+
+Even within institutional investors, behavior is **not homogeneous**:
+
+* Insurance companies
+  → Prefer domestic broad indices and sector ETFs
+
+* Diversified insurance strategies
+  → Allocate across multiple asset classes (A-shares, HK, US, bonds)
+
+👉 This implies that:
+
+> Investor classification must be **granular**, not binary
+
+---
+
+## 📈 Practical Implications
+
+This framework enables:
+
+* Identification of **sector-level capital rotation**
+* Real-time tracking of **institutional positioning**
+* Construction of **flow-based predictive signals**
+
+---
+
+## 🔧 Extensions
+
+The framework has been extended to:
+
+* Track investor structure of **newly issued ETFs (e.g., A500 Index ETF)**
+* Incorporate additional variables:
+
+  * Trading volume
+  * Premium/discount
+  * Time segmentation (accumulation phase)
 
 
-你下一步把图表给我，我可以帮你把 README 直接升级成 **顶级 GitHub 项目水平（可以面试讲的那种）**
+
+
+
+
