@@ -139,7 +139,7 @@ Analysis is extended across:
 
 ## 📈 Strategy Insight
 
-### Key Finding (核心结论)
+### Key Finding
 
 👉 **ETF flows contain predictive information for industry returns**
 
