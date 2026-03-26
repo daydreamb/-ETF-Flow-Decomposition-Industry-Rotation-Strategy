@@ -111,3 +111,5 @@ This allows comparison between:
 - Broad market allocation signals  
 
 and highlights structural differences in flow dynamics across ETF types.
+
+***NOtes: 2025 January data information!!
