@@ -24,7 +24,7 @@
   Used for institutional profiling (e.g., mutual funds, state-owned capital).
 
 - **institution_labels.csv**  
-  Pre-classified institutional categories from the Juyuan database.  
+  Pre-classified institutional categories from the Juyuan database（Gildata聚源）.  
   Validated in industry analysis and used for ongoing updates (e.g., brokers, insurance).
 
 - **initial_fund_size.csv**  
